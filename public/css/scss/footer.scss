@@ -1,0 +1,142 @@
+//Style for footer
+@import 'mixins';
+
+#footer{
+	color: white;
+	background-color: #202020;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	.row{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	a{
+		color: white;
+		display: block;
+		text-decoration: none;
+		@include transition-fade(0.3s);
+		margin-bottom: 7px;
+	}
+
+	a:hover{
+		//text-decoration: underline;
+		opacity: 0.5;
+	}
+
+	hr{
+		border:none;
+		height: 1px;
+		width: 20px;
+		background-color: white;
+		opacity: 0.3;
+		@include respond-to(wide-screens) { 
+			display: none;
+		}
+	}
+
+	span{
+		display: block;
+		margin-bottom: 7px;
+	}
+
+	.leftside{
+		text-align: center;
+		border-right: 1px solid #444444;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		font-family:"Playfair Display";
+		padding-right: 50px;
+		@include respond-to(handhelds-and-medium) { 
+			
+			border-right: none;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+
+	.rightside{
+		padding-top: 80px;
+		padding-bottom: 50px;
+		padding-left: 80px;
+		@include respond-to(handhelds-and-medium) { 
+			padding-top: 0px;
+			text-align: center;
+			padding-left: 0px;
+			padding-right: 0px;
+			margin-top: 78px;
+		}
+		span{
+			display: block;
+			margin-bottom: 7px;
+			font-size: 17px;
+		}
+	}
+
+	.social{
+		@include respond-to(handhelds-and-medium) { 
+			margin-top: 40px;
+		}
+	}
+
+	.fa{
+		display: inline-block;
+		text-decoration: none;
+		margin-right: 10px;
+	}
+}
+
+.footer-title{
+	font-size: 20px;
+}
+
+.footer-subtitle{
+	font-size: 25px;
+}
+
+.info-footer{
+	margin-top: 30px;
+	font-size: 16px;
+	opacity: 0.4;
+	span{
+		margin-top: 7px;
+	}
+}
+
+//Credits
+
+#credits{
+	background-color: #1d1d1d;
+	color: white;
+	font-size: 15px;
+	@include respond-to(handhelds-and-medium) { 
+		text-align: center;
+	}
+
+	.container-fluid{
+		padding-top: 46px;
+		padding-bottom: 43px;
+		padding-left: 69px;
+		padding-right: 69px;
+		opacity: 0.2;
+	}
+
+	.col-sm-6:nth-of-type(2){
+		text-align: right;
+		@include respond-to(handhelds-and-medium) { 
+			margin-top: 20px;
+			text-align: center;
+		}
+	}
+
+	a{
+		color: white;
+		text-decoration: underline;
+	}
+}
+
+.flat-link{
+	text-decoration: underline;
+	font-size: 17px;
+}

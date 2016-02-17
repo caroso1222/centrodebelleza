@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Join&amp;Enjoy">
+
+	<title>Centro de Belleza Nicolás Heredia</title>
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css"/>
+	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css"/>
+	<link rel="stylesheet" href="css/buttons.css"/>
+	<link rel="stylesheet" href="css/footer.css"/>
+	<link rel="stylesheet" href="css/cotizacion.css"/>
+	<!-- Custom CSS -->
+	<!--Start of Zopim Live Chat Script-->
+	<script type="text/javascript">
+	window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+		d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+			_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+			$.src="//v2.zopim.com/?3cIsQOMCcvKGiWbA9AKEXsA1DUGt6Smg";z.t=+new Date;$.
+			type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+			</script>
+			<!--End of Zopim Live Chat Script-->
+			
+			<!--Start of Google Analytics Script-->
+			<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-58505326-11', 'auto');
+			ga('send', 'pageview');
+			</script>
+			<!--End of Google Analytics Script-->
+		</head>
+
+		<body>
+			<% include ../partials/loader %> 
+			<% include ../partials/navigation %> 
+			<div ng-app = "quote-app" ng-controller="QuoteController as quote" class = "quote-app-wrapper">
+				<section id = "question-1">
+					<div class = "question-wrapper">
+						<div class = "answers-wrapper procedure">
+							<h3  class = "wow fadeInUpLittle">¿Cuál procedimiento te interesa?</h3>
+							<div class = "row"> 
+								<div class = "col-sm-4 col-sm-offset-2">
+									<div class = "button-wrapper">
+										<button href="" class = "button button--aylen wow fadeInLeftLittle" ng-click="quote.activateBody($event,quote.PROCEDURES.DEPILACION)" data-wow-delay = "0.5s">{{quote.PROCEDURES.DEPILACION}}</button>
+									</div>
+								</div>
+								<div class = "col-sm-4">
+									<div class = "button-wrapper">
+										<button href="" class = "button button--aylen wow fadeInRightLittle" ng-click="quote.activateBody($event,quote.PROCEDURES.MEDICINA)" data-wow-delay = "0.5s">{{quote.PROCEDURES.MEDICINA}}</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id = "question-2" ng-show = "quote.sections.bodyParts">
+					<div class = "question-wrapper">
+						<div class = "answers-wrapper multi-option body-parts wow fadeInUpLittle" >
+							<hr>
+							<h3 class = "wow fadeInUpLittle">¿Cuál parte de tu cuerpo deseas tratar?</h3>
+							<div class = "row"> 
+								<div class = "col-sm-3 col-xs-6" ng-repeat="bodyPart in quote.bodyPartsActivated">
+									<div class = "button-wrapper" >
+										<button href="" class = "button button--aylen" ng-click="quote.activateZone($event,bodyPart)">{{bodyPart}}</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id = "question-3" ng-show = "quote.sections.zones">
+					<div class = "question-wrapper wow fadeInUpLittle">
+						<div class = "answers-wrapper multi-option zones wow fadeInUpLittle" >
+							<hr>
+							<h3>Cuéntanos en cuál zona nos vamos a concentrar</h3>
+							<div class = "row"> 
+								<div class = "col-sm-3 col-xs-6" ng-repeat="zone in quote.zonesActivated">
+									<div class = "button-wrapper">
+										<button href="" class = "button button--aylen" ng-click="quote.activateRecomendation($event,zone)" >{{zone}}</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id = "recommendations" ng-show = "quote.sections.recommendations">
+					<span class = "hr wow fadeInLeftLittle"></span>
+					<h3 class = "wow fadeInLeftLittle" ng-show = "quote.num_recommendations > 1">Te recomendamos estos procedimientos</h3>
+					<h3 class = "wow fadeInLeftLittle" ng-show = "quote.num_recommendations == 1">Te recomendamos este procedimiento</h3>
+					<div class = "container">
+						<div class = "row">
+							<div class = "col-sm-4" ng-show = "quote.num_recommendations == 1"></div>
+							<div class = "col-sm-2" ng-show = "quote.num_recommendations == 2"></div>
+							<div class = "col-sm-4 wow fadeInUpLittle" ng-repeat = "recommendation in quote.recommendationsActivated" data-wow-delay = "{{$index*0.8}}s">
+								<div class = "title-wrapper">
+									<span class = "lbl wow fadeInLeftLittle" data-wow-delay = "{{$index*0.8+0.3}}s">Procedimiento</span>
+									<h4 class = " wow fadeInLeftLittle" data-wow-delay = "{{$index*0.8 +0.3}}s">{{recommendation[0]}}</h4>
+								</div>
+								<div class = "body-wrapper">
+									<span class = "lbl wow fadeInLeftLittle" data-wow-delay = "{{$index*0.8+0.3}}s">Número de sesiones</span>
+									<h5 class = " wow fadeInLeftLittle" data-wow-delay = "{{$index*0.8+0.3}}s">{{recommendation[1]}}</h5>
+									<span class = "lbl wow fadeInLeftLittle" data-wow-delay = "{{$index*0.8+0.3}}s">Frecuencia</span>
+									<p class = " wow fadeInLeftLittle" data-wow-delay = "{{$index*0.8+0.3}}s">{{recommendation[2]}}</p>
+								</div>
+								<div class = "btn-wrapper">
+									<a href = "contacto.html" target ="_blank"class = "btn-flat btn-black wow fadeInUpLittle">Reservar</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<% include ../partials/footer %> 
+
+			</div>
+
+
+
+
+
+
+			<script src="bower_components/jquery/dist/jquery.min.js"></script>
+			<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+			<script src="bower_components/wow/dist/wow.min.js"></script>
+			<script src="bower_components/angular/angular.min.js"></script>
+			<script src="js/base.js"></script>	
+			<script src="js/cotizacion.js"></script>
+		</body>
+
+		</html>

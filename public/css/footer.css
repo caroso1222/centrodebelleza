@@ -1,0 +1,107 @@
+#footer {
+  color: white;
+  background-color: #202020;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  #footer .row {
+    margin-left: 0px;
+    margin-right: 0px; }
+  #footer a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-bottom: 7px; }
+  #footer a:hover {
+    opacity: 0.5; }
+  #footer hr {
+    border: none;
+    height: 1px;
+    width: 20px;
+    background-color: white;
+    opacity: 0.3; }
+    @media only screen and (min-width: 1024px) {
+      #footer hr {
+        display: none; } }
+  #footer span {
+    display: block;
+    margin-bottom: 7px; }
+  #footer .leftside {
+    text-align: center;
+    border-right: 1px solid #444444;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: "Playfair Display";
+    padding-right: 50px; }
+    @media only screen and (max-width: 1023px) {
+      #footer .leftside {
+        border-right: none;
+        padding-left: 0px;
+        padding-right: 0px; } }
+  #footer .rightside {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 80px; }
+    @media only screen and (max-width: 1023px) {
+      #footer .rightside {
+        padding-top: 0px;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 78px; } }
+    #footer .rightside span {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 17px; }
+  @media only screen and (max-width: 1023px) {
+    #footer .social {
+      margin-top: 40px; } }
+  #footer .fa {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px; }
+
+.footer-title {
+  font-size: 20px; }
+
+.footer-subtitle {
+  font-size: 25px; }
+
+.info-footer {
+  margin-top: 30px;
+  font-size: 16px;
+  opacity: 0.4; }
+  .info-footer span {
+    margin-top: 7px; }
+
+#credits {
+  background-color: #1d1d1d;
+  color: white;
+  font-size: 15px; }
+  @media only screen and (max-width: 1023px) {
+    #credits {
+      text-align: center; } }
+  #credits .container-fluid {
+    padding-top: 46px;
+    padding-bottom: 43px;
+    padding-left: 69px;
+    padding-right: 69px;
+    opacity: 0.2; }
+  #credits .col-sm-6:nth-of-type(2) {
+    text-align: right; }
+    @media only screen and (max-width: 1023px) {
+      #credits .col-sm-6:nth-of-type(2) {
+        margin-top: 20px;
+        text-align: center; } }
+  #credits a {
+    color: white;
+    text-decoration: underline; }
+
+.flat-link {
+  text-decoration: underline;
+  font-size: 17px; }
+
+/*# sourceMappingURL=footer.css.map */

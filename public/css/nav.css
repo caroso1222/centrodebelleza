@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+.hamburger, .close-btn {
+  position: fixed;
+  padding: 30px;
+  top: 0;
+  z-index: 30; }
+  .hamburger a, .close-btn a {
+    font-size: 23px;
+    text-decoration: none;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .hamburger a.white, .close-btn a.white {
+    color: white; }
+  .hamburger a.dark, .close-btn a.dark {
+    color: #1d1d1d; }
+  .hamburger a:hover, .close-btn a:hover {
+    opacity: 0.4; }
+
+.nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: #1d1d1d;
+  display: block;
+  z-index: 1000;
+  display: table;
+  visibility: hidden; }
+  .nav .close-btn {
+    z-index: 2000; }
+    .nav .close-btn a:hover {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
+
+.nav-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+  .nav-wrapper a {
+    font-family: "Playfair Display";
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    position: relative;
+    transform: translateY(10px);
+    opacity: 0;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .nav-wrapper a:nth-of-type(1) {
+    transition-delay: 200ms; }
+  .nav-wrapper a:nth-of-type(2) {
+    transition-delay: 400ms; }
+  .nav-wrapper a:nth-of-type(3) {
+    transition-delay: 600ms; }
+  .nav-wrapper a:nth-of-type(4) {
+    transition-delay: 800ms; }
+  .nav-wrapper a:nth-of-type(5) {
+    transition-delay: 1000ms; }
+  .nav-wrapper a:nth-of-type(6) {
+    transition-delay: 1200ms; }
+  .nav-wrapper a:nth-of-type(7) {
+    transition-delay: 1400ms; }
+  .nav-wrapper a:nth-of-type(8) {
+    transition-delay: 1600ms; }
+  .nav-wrapper a:nth-of-type(9) {
+    transition-delay: 1800ms; }
+  .nav-wrapper a:nth-of-type(10) {
+    transition-delay: 2000ms; }
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden; }
+
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: white;
+  height: 1px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0; }
+
+/*# sourceMappingURL=nav.css.map */
