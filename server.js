@@ -1,6 +1,7 @@
 // grab express
 var express = require('express'); // create an express app
 var app = express();
+var path = require('path');
 // create an express route for the home page // http://localhost:8080/
 
 // CONFIGURE THE APP
@@ -31,6 +32,12 @@ app.get('/contacto', function(req, res) {
 
 app.get('/laser-manchas', function(req, res) {
     res.render('pages/laser-manchas');
+});
+
+app.get('/contact.php', function(req, res) {
+    console.log("get into contact");
+    console.log(path.join(__dirname + '/views/contact.php'));
+    res.sendFile(path.join(__dirname + '/views/php/contact.php'));
 });
 
 app.get('/laser-rejuvenecimiento', function(req, res) {
