@@ -1204,9 +1204,23 @@ li:before:not(.bx-wrapper li) {
     @media only screen and (max-width: 1023px) {
       .info .description-wrapper .p-1 {
         font-size: 17px; } }
-  @media only screen and (max-width: 1023px) {
-    .info .description-wrapper li {
-      font-size: 14px; } }
+  .info .description-wrapper li {
+    position: relative;
+    padding-left: 54px;
+    margin-bottom: 10px;
+    font-size: 15px; }
+    .info .description-wrapper li:before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 36px;
+      background-color: #333333;
+      display: block;
+      top: 9px;
+      left: 0px; }
+    @media only screen and (max-width: 1023px) {
+      .info .description-wrapper li {
+        font-size: 14px; } }
   .info .description-wrapper ul {
     padding-left: 23px; }
 
@@ -1243,11 +1257,22 @@ li:before:not(.bx-wrapper li) {
   #contraindications li {
     margin-bottom: 18px;
     font-size: 17px;
-    opacity: 0.85; }
+    opacity: 0.85;
+    position: relative;
+    padding-left: 54px; }
     @media only screen and (max-width: 1023px) {
       #contraindications li {
         font-size: 15px;
         margin-bottom: 12px; } }
+    #contraindications li:before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 36px;
+      background-color: #333333;
+      display: block;
+      top: 9px;
+      left: 0px; }
 
 #call-to-action {
   height: 100%;

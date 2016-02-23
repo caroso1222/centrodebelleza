@@ -504,6 +504,8 @@ button {
   @media only screen and (max-width: 1023px) {
     #recommendations .col-sm-4 {
       margin-bottom: 25px; } }
+  #recommendations .the-recommendation {
+    margin-top: 45px; }
   #recommendations .container {
     width: 1180px; }
     @media only screen and (max-width: 1023px) {
@@ -523,7 +525,7 @@ button {
     margin-left: 20px;
     font-size: 37px;
     display: inline-block;
-    margin-bottom: 70px; }
+    margin-bottom: 15px; }
     @media only screen and (min-width: 1024px) {
       #recommendations h3 {
         margin-left: 1%; } }

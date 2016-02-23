@@ -207,6 +207,10 @@ button{
 		}
 	}
 
+	.the-recommendation{
+		margin-top: 45px;
+	}
+
 	.container{
 		width: 1180px;
 		@include respond-to(handhelds-and-medium) { 
@@ -242,7 +246,7 @@ button{
 			margin-left: 0px;
 			margin-bottom: 30px;
 		}
-		margin-bottom: 70px;
+		margin-bottom: 15px;
 	}
 
 	.lbl{

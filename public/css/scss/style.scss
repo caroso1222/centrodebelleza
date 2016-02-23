@@ -96,7 +96,7 @@ li:not(.bxslider li){
 	font-size: 16px;
 }
 
-li:before:not(.bx-wrapper li){
+li:before:not(.bx-wrapper li){ 
 	content: "";
 	position: absolute;
 	height: 1px;
@@ -1046,6 +1046,21 @@ li:before:not(.bx-wrapper li){
 		}
 
 		li{
+			position: relative;
+	padding-left: 54px;
+	margin-bottom: 10px;
+	font-size: 15px;
+			&:before{
+				content: "";
+				position: absolute;
+				height: 1px;
+				width: 36px;
+				background-color: #333333;
+				display: block;
+				top: 9px;
+				left: 0px;
+			}
+
 			@include respond-to(handhelds-and-medium){
 				font-size: 14px;
 			}
@@ -1098,9 +1113,24 @@ li:before:not(.bx-wrapper li){
 		margin-bottom: 18px;
 		font-size: 17px;
 		opacity: 0.85;
+		position: relative;
+		padding-left: 54px;
+
+
 		@include respond-to(handhelds-and-medium){
 			font-size: 15px;
 			margin-bottom: 12px;
+		}
+
+		&:before{
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 36px;
+			background-color: #333333;
+			display: block;
+			top: 9px;
+			left: 0px;
 		}
 	}
 }

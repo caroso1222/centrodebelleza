@@ -100,19 +100,19 @@
 						<div class = "row">
 							<div class = "col-sm-4" ng-show = "quote.num_recommendations == 1"></div>
 							<div class = "col-sm-2" ng-show = "quote.num_recommendations == 2"></div>
-							<div class = "col-sm-4 wow fadeInUpLittle" ng-repeat = "recommendation in quote.recommendationsActivated" data-wow-delay = "{{$index*0.8}}s">
+							<div class = "col-sm-4 wow fadeInUpLittle the-recommendation" ng-repeat = "recommendation in quote.recommendationsActivated" data-wow-delay = "{{$index*0.8}}s">
 								<div class = "title-wrapper">
 									<span class = "lbl wow fadeInLeftLittle" data-wow-delay = "{{$index*0.8+0.3}}s">Procedimiento</span>
 									<h4 class = " wow fadeInLeftLittle" data-wow-delay = "{{$index*0.8 +0.3}}s">{{recommendation[0]}}</h4>
 								</div>
 								<div class = "body-wrapper">
-									<span class = "lbl wow fadeInLeftLittle" data-wow-delay = "{{$index*0.8+0.3}}s">Número de sesiones</span>
-									<h5 class = " wow fadeInLeftLittle" data-wow-delay = "{{$index*0.8+0.3}}s">{{recommendation[1]}}</h5>
-									<span class = "lbl wow fadeInLeftLittle" data-wow-delay = "{{$index*0.8+0.3}}s">Frecuencia</span>
-									<p class = " wow fadeInLeftLittle" data-wow-delay = "{{$index*0.8+0.3}}s">{{recommendation[2]}}</p>
+									<span class = "lbl wow fadeInLeftLittle" >Número de sesiones</span>
+									<h5 class = " wow fadeInLeftLittle" >{{recommendation[1]}}</h5>
+									<span class = "lbl wow fadeInLeftLittle" >Frecuencia</span>
+									<p class = " wow fadeInLeftLittle" >{{recommendation[2]}}</p>
 								</div>
 								<div class = "btn-wrapper">
-									<a href = "contacto.html" target ="_blank"class = "btn-flat btn-black wow fadeInUpLittle">Reservar</a>
+									<a href = "contacto" target ="_blank"class = "btn-flat btn-black wow fadeInUpLittle">Reservar</a>
 								</div>
 							</div>
 						</div>
