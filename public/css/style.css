@@ -792,6 +792,9 @@ li:before:not(.bx-wrapper li) {
   .bx-controls-direction {
     display: none; } }
 
+#gallery-botox .col-sm-8 {
+  margin-bottom: 102px; }
+
 #normal-descr {
   margin-bottom: 65px; }
   #normal-descr .descr-wrapper {

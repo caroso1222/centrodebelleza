@@ -35,6 +35,17 @@ $( document ).ready(function() {
     video: true,
     width: 400
   });
+
+   $('.bxslider-2').bxSlider({
+    minSlides: 1,
+    maxSlides: 4,
+    slideWidth: 170,
+    moveSlides: 1,
+  slideMargin: 10,
+  pager: false
+
+  });
+
  }
  
  ,100);
