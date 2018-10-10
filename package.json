@@ -1,15 +1,16 @@
 {
-	"name": "johndoe",
-	"version": "1.0.0",
-	"description": "Website for surgeon Nicolás Heredia",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-		},
-		"author": "Join&Enjoy",
-		"license": "ISC",
-		"dependencies": {
-			"ejs": "^2.4.1",
-			"express": "^4.13.4"
-		}
-	}
+ "name": "johndoe",
+ "version": "1.0.0",
+ "description": "Website for surgeon John Doe",
+ "main": "index.js",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "node server.js"
+ },
+ "author": "Carlos Roso",
+ "license": "ISC",
+ "dependencies": {
+  "ejs": "^2.4.1",
+  "express": "^4.13.4"
+ }
+}
