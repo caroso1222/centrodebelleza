@@ -1,11 +1,11 @@
 {
-  "name": "e-cosistema",
+  "name": "johndoe",
   "version": "0.0.1",
   "dependencies": {
     "angular": "^1.4.9",
     "bootstrap": "^3.3.6",
     "jquery": "^2.2.0",
     "components-font-awesome": "^4.5.0",
-    "wowjs": "1.1.2"
+    "wowjs": "^1.1.0"
   }
 }
